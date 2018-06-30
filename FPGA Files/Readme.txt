@@ -23,13 +23,7 @@ o	The Send_Flag is Off for more than 100ms
 Then the Entity would reset all the Msp430G2533 chips.
 
 Design Reuse:
-•	I2c_Slave_Receive can be reused in order to communicate with any other IIC Device as a slave.
-•	I2c_Master_Receive can be reused in order to communicate with any other IIC Device as a Master – in the IIC text book protocol.
-This code can be used as is to receive data from the BNO055 IMU Chip.
-•	TCP_receive can be reused in order to communicate with any other Ethernet Device using TCP communication.
-•	Send_Data can be reused in order to do the following operations:
-o	Sending udp Packets
-o	Sending data to the FPGA
+•	PWM_generator can be reused in order to send instruction to any device that receives PWM.
 
 
 
